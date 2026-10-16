@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Mahendra Fajarullah</title>
+    <!-- Font Google (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Style CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Latar Belakang Dekoratif Gelap -->
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
+    <!-- NAVBAR RESPONSIF -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">MF.</a>
+            
+            <!-- Tombol Hamburger (Mobile) -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Menu Navigasi -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li>
+                <li class="nav-item"><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
+                <li class="nav-item"><a href="#keahlian" class="nav-link">Keahlian</a></li>
+                <li class="nav-item"><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <!-- HEADER / HERO SECTION -->
+        <header id="tentang" class="hero-card animate-on-scroll">
+            <div class="profile-frame">
+                <img src="WhatsApp Image 2026-09-02 at 08.35.32.jpeg" alt="Mahendra Fajarullah" class="profile-img">
+            </div>
+            <div class="hero-text">
+                <span class="badge">Portofolio Singkat</span>
+                <h1 class="name">Mahendra Fajarullah</h1>
+                <p class="role">Web Developer & Front-End Enthusiast</p>
+                <p class="bio">
+                    Saya merupakan seorang <em>Web Developer</em> yang berdedikasi tinggi serta antusias dalam merancang dan mengembangkan antarmuka website modern, responsif, dan interaktif. Saat ini, saya aktif menempuh pendidikan di Kalbis University sembari memperdalam keahlian di bidang <em>Front-End Development</em>, pengembangan struktur web, serta optimasi pengalaman pengguna (UI/UX).
+                    <br><br>
+                    Dengan pemahaman dasar yang kuat dalam HTML, CSS, JavaScript, serta pembuatan visual interaktif, saya selalu berfokus untuk menghasilkan kode yang bersih, efisien, dan ramah pengguna di berbagai perangkat.
+                </p>
+            </div>
+        </header>
+
+        <!-- SEKSI RIWAYAT PENDIDIKAN (TIMELINE) -->
+        <section id="pendidikan" class="section-card animate-on-scroll">
+            <h2 class="section-title">Riwayat Pendidikan</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Sekarang</span>
+                        <h3 class="timeline-heading">Kalbis University</h3>
+                        <p class="timeline-sub">Mahasiswa Aktif</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2025</span>
+                        <h3 class="timeline-heading">SMAN 43, Jakarta Selatan</h3>
+                        <p class="timeline-sub">SMA / Sederajat</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 - 2022</span>
+                        <h3 class="timeline-heading">SMPN 3, Jakarta Selatan</h3>
+                        <p class="timeline-sub">SMP / Sederajat</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2013 - 2019</span>
+                        <h3 class="timeline-heading">SDN Menteng Atas 05, Jakarta Selatan</h3>
+                        <p class="timeline-sub">SD / Sederajat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKSI DIAGRAM KEAHLIAN (PIE CHART LINGKARAN PENUH) -->
+        <section id="keahlian" class="section-card animate-on-scroll">
+            <h2 class="section-title">Keahlian Utama</h2>
+            <div class="chart-wrapper">
+                <div class="chart-container">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKSI KONTAK -->
+        <section id="kontak" class="section-card animate-on-scroll">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-grid">
+                <a href="mailto:mahendrafajarullah20@gmail.com" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">mahendrafajarullah20@gmail.com</span>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/6281386311896" target="_blank" class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-info">
+                        <span class="contact-label">Telepon / WhatsApp</span>
+                        <span class="contact-value">+62 813-8631-1896</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Mahendra Fajarullah. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- LIBRARY CHART.JS & PLUGIN DATALABELS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+    <!-- SCRIPT UTAMA -->
+    <script src="script.js"></script>
+</body>
+</html>
